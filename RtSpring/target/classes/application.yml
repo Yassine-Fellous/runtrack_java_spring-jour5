@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+greeting:
+  message: Hello World (sa deuh)
+
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+greeting:
+  message: Hello World (sa deuh pas)
+
+---
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+
+
+
